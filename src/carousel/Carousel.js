@@ -16,8 +16,10 @@ const IS_IOS = Platform.OS === 'ios';
 
 // Native driver for scroll events
 // See: https://facebook.github.io/react-native/blog/2017/02/14/using-native-driver-for-animated.html
-const AnimatedFlatList = FlatList ? Animated.createAnimatedComponent(FlatList) : null;
-const AnimatedScrollView = Animated.createAnimatedComponent(ScrollView);
+// const AnimatedFlatList = FlatList ? Animated.createAnimatedComponent(FlatList) : null;
+// const AnimatedScrollView = Animated.Animated.createAnimatedComponent(ScrollView);
+const AnimatedFlatList = FlatList ? Animated.FlatList : null;
+const AnimatedScrollView = Animated.ScrollView;
 
 // React Native automatically handles RTL layouts; unfortunately, it's buggy with horizontal ScrollView
 // See https://github.com/facebook/react-native/issues/11960
@@ -489,7 +491,8 @@ export default class Carousel extends Component {
         }
         // https://github.com/facebook/react-native/issues/10635
         // https://stackoverflow.com/a/48786374/8412141
-        return this._carouselRef && this._carouselRef.getNode && this._carouselRef.getNode();
+        // return this._carouselRef && this._carouselRef.getNode && this._carouselRef.getNode();
+        return this._carouselRef
     }
 
     _getScrollEnabled () {
