@@ -1,3 +1,9 @@
+## Clone From
+[meliorence/react-native-snap-carousel](https://github.com/meliorence/react-native-snap-carousel)
+
+## Issue to solve
+[calling getNode() is no longer necessary #39](https://github.com/intellidev1991/react-native-image-slider-box/issues/39)
+
 # react-native-snap-carousel
 
 ![platforms](https://img.shields.io/badge/platforms-Android%20%7C%20iOS-brightgreen.svg?style=flat-square&colorB=191A17)
@@ -238,3 +244,6 @@ Android's debug mode is a mess: timeouts regularly desynchronize and scroll even
 
 Written by [Benoît Delmaire](https://fr.linkedin.com/in/benoitdelmaire) ([bd-arc](https://github.com/bd-arc)) and [Maxime Bertonnier](https://fr.linkedin.com/in/maxime-bertonnier-744351aa) ([Exilz](https://github.com/Exilz)) at
 [Meliorence](https://www.meliorence.com/).
+
+
+
